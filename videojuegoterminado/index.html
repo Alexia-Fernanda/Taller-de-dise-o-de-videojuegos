@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Gato 3D</title>
+    <style>
+        /* CSS para eliminar los bordes y márgenes por defecto */
+        body { margin: 0; padding: 0; overflow: hidden; background-color: #1a1a1a; }
+        
+        /* Contenedor del lienzo del juego */
+        canvas { display: block; }
+        
+        /* Contenedor del marcador de puntuación */
+        #ui-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            pointer-events: none; /* No interfiere con los clics */
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="ui-container">
+        <div>Buenas: <span id="buenas-txt">0</span></div>
+        <div>Malas: <span id="malas-txt">0</span></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
